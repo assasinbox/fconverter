@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block page_title %} {% endblock %}</title>
+		<meta charset="utf8" />
+        <link rel="stylesheet" href="media/bootstrap.css">
+	</head>
+	<body>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Format Converter</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container bs-docs-container" style="margin-top: 100px">
+        <div class="row">
+		    {% block content %} {% endblock %}
+        </div>
+    </div>
+	</body>
+</html>
